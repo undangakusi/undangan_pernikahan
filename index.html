@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Pernikahan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+	<style>
+.text-shadow-gold {
+  text-shadow:
+    0 0 5px #FFD700,
+    0 0 10px #FFD700,
+    0 0 15px #FFD700,
+    0 0 20px #FFD700;
+}
+</style>
+</head>
+<body class="text-gray-800">
+ 
+  <!-- Cover Section -->
+  <section class="cover-section">
+    <div class="cover-background"></div>
+
+    <!-- Ornamen -->
+    <img src="elemen1/ornamen-atas.png" alt="Ornamen Kiri" class="ornament top">
+	<img src="elemen1/ornamen-kiriatas.png" alt="Ornamen Kiri" class="ornament lefttop">
+    <img src="elemen1/ornamen-kananatas.png" alt="Ornamen Kanan" class="ornament righttop">
+    <img src="elemen1/ornamen-kiri.png" alt="Ornamen Kiri" class="ornament left">
+    <img src="elemen1/ornamen-kanan.png" alt="Ornamen Kanan" class="ornament right">
+
+    <!-- Konten -->
+    <div class="cover-content">
+      <div class="text-content">
+        <h1 class="judul">Undangan Pernikahan</h1>
+        <p class="nama-pengantin">
+			Siti Nur Aliyah<br>
+			&amp;<br>
+			Ipan Darma Setiawan
+			</p>
+
+        <p class="undangan">Kami mengundang Anda untuk merayakan hari istimewa kami</p>
+		<audio id="wedding-music" hidden>
+		<source src="lagupernikahantiaraandiniarsy.mp3" type="audio/mpeg">
+		</audio>
+			<button onclick="playMusicAndScroll()" class="lihat-detail">
+			Mulai Musik
+		</button>
+      </div>
+    </div>
+  </section>
+
+
+
+    <!-- Gallery Section (Halaman 3) -->
+   <section id="gallery" class="min-h-screen flex items-center justify-center" style="background-color: #050213;">
+	<!-- Ornamen -->
+	
+	
+        <div class="container mx-auto px-4 text-center">
+		<img src="elemen1/ornamen-kiriatas.png" alt="Ornamen Kiri" class="ornament lefttop">
+    <img src="elemen1/ornamen-kananatas.png" alt="Ornamen Kanan" class="ornament righttop">
+        <h2 class="text-6xl parisienne mb-8 text-white mt-12 text-shadow-gold">Galeri Pengantin</h2>
+
+<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-4">
+  <div class="gallery-item transition transform duration-300 ease-in-out hover:-translate-y-2 hover:shadow-2xl rounded-xl overflow-hidden bg-white/10 backdrop-blur-md shadow-md">
+    <img src="gallery/foto1.jpg" alt="Foto Pengantin 1" class="w-full h-64 object-cover rounded-lg">
+	<p class="undangan">Di suatu waktu, kita bertemu tanpa rencana.</p>
+  </div>
+  <div class="gallery-item transition transform duration-300 ease-in-out hover:-translate-y-2 hover:shadow-2xl rounded-xl overflow-hidden bg-white/10 backdrop-blur-md shadow-md">
+    <img src="gallery/foto2.jpg" alt="Foto Pengantin 2" class="w-full h-64 object-cover rounded-lg">
+	<p class="undangan">Pelan-pelan, kamu jadi tempatku bercerita.</p>
+  </div>
+  <div class="gallery-item transition transform duration-300 ease-in-out hover:-translate-y-2 hover:shadow-2xl rounded-xl overflow-hidden bg-white/10 backdrop-blur-md shadow-md">
+    <img src="gallery/foto3.jpg" alt="Foto Pengantin 3" class="w-full h-64 object-cover rounded-lg">
+	<p class="undangan">Pernah ada jarak, tapi hati kita tetap ingin pulang.</p>
+  </div>
+  <div class="gallery-item transition transform duration-300 ease-in-out hover:-translate-y-2 hover:shadow-2xl rounded-xl overflow-hidden bg-white/10 backdrop-blur-md shadow-md">
+    <img src="gallery/foto4.jpg" alt="Foto Pengantin 4" class="w-full h-64 object-cover rounded-lg">
+	<p class="undangan">Kita belajar, bahwa cinta butuh dipelihara.</p>
+  </div>
+  <div class="gallery-item transition transform duration-300 ease-in-out hover:-translate-y-2 hover:shadow-2xl rounded-xl overflow-hidden bg-white/10 backdrop-blur-md shadow-md">
+    <img src="gallery/foto5.jpg" alt="Foto Pengantin 5" class="w-full h-64 object-cover rounded-lg">
+	<p class="undangan">Bersama, kita lewati semua yang dulu terasa berat.</p>
+  </div>
+  <div class="gallery-item transition transform duration-300 ease-in-out hover:-translate-y-2 hover:shadow-2xl rounded-xl overflow-hidden bg-white/10 backdrop-blur-md shadow-md">
+    <img src="gallery/foto6.jpg" alt="Foto Pengantin 6" class="w-full h-64 object-cover rounded-lg">
+	<p class="undangan">Hingga hari ini, kita siap mengucap janji selamanya.</p>
+  </div>
+</div>
+        </div>
+    </section>
+  <!-- Details Section (Halaman 4) -->
+<section id="details" class="py-12 px-4" style="background-image: url('bgawan.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+  <div class="container mx-auto text-center">
+   <h2 class="text-4xl font-cinzel text-white mb-8">Detail Acara</h2>
+
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-white">
+      <!-- Wedding Info -->
+      <div style="background-color: #0c091f;" class="max-w-lg mx-auto p-6 rounded-lg text-[#FFD700] shadow-2xl shadow-yellow-200/20">
+	  <br>
+	  <br>
+	  <br>
+
+  <h3 class="text-2xl font-semibold mb-4">Akad Nikah</h3>
+  <p><strong>Tanggal:</strong> 24 September 2025</p>
+  <p><strong>Waktu:</strong>09.00 s/d Selesai</p>
+  <p><strong>Tempat:</strong> Dusun Wonogiri Cilacap, Desa BumiDaya</p>
+  <br>
+	  <h3 class="text-2xl font-semibold mb-4">Resepsi</h3>
+  <p><strong>Tanggal:</strong> 28 September 2025/p>
+  <p><strong>Waktu:</strong> 09.00 s/d Selesai</p>
+  <p><strong>Tempat:</strong>Dusun 8 Sidomukti, Desa Sidoharjo, Kecamatan Way Panji</p>
+  <p class="mt-4">Kami akan sangat berbahagia dengan kehadiran Anda untuk merayakan momen ini bersama kami.</p>
+</div>
+
+
+      <!-- Lokasi Map -->
+      <div class="flex flex-col gap-6">
+ <div style="background-color: #0c091f;" class="max-w-lg mx-auto p-6 rounded-lg text-[#FFD700] shadow-2xl shadow-yellow-200/20">
+       <!-- Lokasi Akad -->
+<div>
+  <h3 class="text-4xl font-cinzel text-white mb-8 text-center">Lokasi Akad</h3>
+  <iframe class="w-full h-64 rounded-lg shadow-lg"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.641367827353!2d105.6231448!3d-5.6076898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNcKwMzYnMjcuNyJTIDEwNcKwMzcnMzIuNiJF!5e0!3m2!1sid!2sid!4v1693737600000!5m2!1sid!2sid"
+    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+
+<br>
+
+<!-- Lokasi Resepsi -->
+<div>
+  <h3 class="text-4xl font-cinzel text-white mb-8 text-center">Lokasi Resepsi</h3>
+  <iframe class="w-full h-64 rounded-lg shadow-lg"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.774123456!2d105.5928237!3d-5.6247751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNcKwMzcnMjkuMiJTIDEwNcKwMzUnNDMuNCJF!5e0!3m2!1sid!2sid!4v1693737600001!5m2!1sid!2sid"
+    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+
+
+      </div>
+</div>
+    </div>
+  </div>
+</section>
+
+  <!-- Kirim Hadiah Section -->
+<section id="gift" class="min-h-screen flex items-center justify-center bg-gray-100">
+  <div class="container mx-auto px-4 text-center">
+    <h2 class="text-3xl font-semibold mb-6">Kirim Hadiah</h2>
+    <p class="mb-8 text-gray-600">Kehadiran dan doa restu adalah hadiah terindah bagi kami. 
+      Namun jika berhalangan hadir dan berkenan berbagi kebahagiaan,
+      dapat melalui tautan atau QRIS berikut:</p>
+
+    <!-- Tombol Kirim via DANA -->
+    <a href="amount by opening this link
+    https://link.dana.id/minta?full_url=https://qr.dana.id/v1/281012012022112430078534" 
+       target="_blank" 
+       class="inline-block px-6 py-3 bg-blue-600 text-white rounded-lg shadow-lg hover:bg-blue-700 transition mb-4">
+       💙 Kirim via DANA
+    </a>
+
+    <!-- Tombol Copy Nomor HP -->
+    <div class="mb-6">
+      <span id="nomorDana" class="block mb-2 text-lg font-medium">085874126958</span>
+      <button onclick="copyDana()" 
+              class="px-4 py-2 bg-green-600 text-white rounded-lg shadow hover:bg-green-700 transition">
+        📋 Copy Nomor HP
+      </button>
+    </div>
+
+    <!-- QRIS -->
+    <div class="mt-6">
+      <img src="qris.jpeg" alt="QRIS DANA" class="mx-auto w-48 rounded-lg shadow">
+    </div>
+  </div>
+</section>
+
+<script>
+function copyDana() {
+  const nomor = document.getElementById('nomorDana').innerText;
+  navigator.clipboard.writeText(nomor).then(() => {
+    alert('Nomor DANA berhasil disalin!');
+  });
+}
+</script>
+
+
+<script src="script.js"></script>
+</body>
+
+<footer class="bg-[#050213] text-white text-center py-6 mt-12">
+  <div class="container mx-auto px-4">
+    <p class="text-sm">
+      Website dibuat oleh <span class="text-[#FFD700] font-semibold">Neilla Nurul F</span>
+    </p>
+    
+    <!-- Kontak -->
+    <div class="mt-2 space-y-1">
+      <p class="text-sm">
+        Email: 
+        <a href="mailto:undangakusi@gmail.com" class="underline hover:text-[#fcd34d]">
+          undangakusi@gmail.com
+        </a>
+      </p>
+      <p class="text-sm">
+        Instagram: 
+        <a href="https://www.instagram.com/neillabukannela/" target="_blank" 
+           class="underline hover:text-[#fcd34d]">
+          @neillabukannela
+        </a>
+      </p>
+    </div>
+
+    <p class="text-xs mt-4 text-gray-400">&copy; 2025 Neilla. All rights reserved.</p>
+  </div>
+</footer>
+
+</html>

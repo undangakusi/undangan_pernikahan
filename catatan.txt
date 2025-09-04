@@ -1,0 +1,9 @@
+catatan yang perlu di lakukan
+
+- buat reltime database menggunakan firebase untuk menyimpan pesan masuk dari tamu undangan[kemungkinan edit di js]
+- buat akun github baru khusus untuk akun undangan supaya linknya gaada nama neilla
+- cari cara menambahkan lagu yang panjang di undangan dan otomatis terputar
+- buat desain untuk baground [pakai canva]
+- tambahan fitur hadir atau tidak hadir
+- kalau tidak hadir bisa kirim hadiah online berupa uang yang dikirim lewat dana atu rekening lain
+- baground tema warba biru dongker

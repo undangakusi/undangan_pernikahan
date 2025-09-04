@@ -1,0 +1,250 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('https://source.unsplash.com/random/1920x1080?wedding') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.parisienne {
+  font-family: 'Parisienne', cursive;
+}
+/* Reset dan font */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+/* Section dasar */
+.cover-section {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  padding: 1rem;
+}
+
+/* Background */
+.cover-background {
+  position: absolute;
+  inset: 0;
+  background: 
+    linear-gradient(to bottom, rgb(0, 0, 19), rgba(1, 1, 25, 0) 115%),
+    url('bg2.jpg') no-repeat center center / cover;
+  background-position: center;
+  z-index: -1;
+}
+
+
+/* Konten */
+.cover-content {
+  max-width: 800px;
+  width: 100%;
+}
+
+.couple-photo {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  margin: 0 auto 1.5rem;
+  display: block;
+}
+
+/* Teks */
+.text-content {
+  padding: 0 1rem;
+}
+
+.judul {
+  font-size: 5rem;
+  color: white;
+  font-family: 'Great Vibes', cursive;
+  margin-bottom: 0.5rem;
+}
+
+.nama-pengantin {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.undangan {
+  font-size: 1rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.lihat-detail {
+  padding: 0.75rem 2rem;
+  background-color: white;
+  color: #333;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.lihat-detail:hover {
+  background-color: #ddd;
+}
+
+/* Ornamen */
+.ornament {
+  position: absolute;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.ornament.top {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  z-index: 20;
+}
+
+.ornament.left {
+  bottom: 0;
+  left: 0;
+  width: 300px;
+}
+
+.ornament.right {
+  bottom: 0;
+  right: 0;
+  width: 300px;
+}
+
+.ornament.lefttop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  z-index: 10;
+}
+
+.ornament.righttop {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  z-index: 10;
+}
+
+.cover-section {
+  position: relative;
+  overflow: hidden;
+}
+
+#gallery {
+  position: relative;
+  overflow: hidden;
+}
+
+.ornament.top,
+.ornament.left,
+.ornament.right,
+.ornament.lefttop,
+.ornament.righttop {
+  width: 300px;
+  max-width: 40%;
+  min-width: 100px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+
+  .nama-pengantin .simbol {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    font-weight: 300;
+    margin: 0.3rem 0;
+    display: inline-block;
+  }
+
+  .undangan {
+    font-size: 0.9rem;
+  }
+
+  .ornament.top,
+  .ornament.bottom {
+    width: 80px;
+  }
+
+  .ornament.left,
+  .ornament.right {
+    width: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .judul {
+    font-size: 4rem;
+  }
+
+  .nama-pengantin {
+    font-size: 1.5rem;
+  }
+
+  .undangan {
+    font-size: 1rem;
+  }
+
+  .lihat-detail {
+    padding: 0.5rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .ornament.left,
+  .ornament.right {
+    width: 100px;
+  }
+}
+
+.great-vibes {
+  font-family: 'Great_Vibes', cursive;
+}
+
+#messages-container {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.text-shadow-gold {
+  text-shadow:
+    0 0 3px #FFD700,
+    0 0 6px #FFD700,
+    0 0 9px #FFD700;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery-item img {
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+.glowing-text {
+  color: white;
+  text-shadow:
+    0 0 5px white,
+    0 0 10px white,
+    0 0 15px #fff,
+    0 0 20px #f8cdda,
+    0 0 25px #f8cdda;
+}
+/* Tambahkan di styles.css */
+.font-cinzel {
+  font-family: 'Cinzel', serif;
+}
